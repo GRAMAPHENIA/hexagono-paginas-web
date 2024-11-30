@@ -1,3 +1,24 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "eslint:recommended", // Configuración recomendada para ESLint
+    "plugin:react/recommended", // Reglas recomendadas para React
+    "plugin:@typescript-eslint/recommended" // Reglas recomendadas para TypeScript
+  ],
+  "plugins": ["react", "@typescript-eslint"],
+  "parser": "@typescript-eslint/parser", // Utiliza el parser de TypeScript
+  "parserOptions": {
+    "ecmaVersion": 2020, // Usar la versión ECMAScript más reciente
+    "sourceType": "module", // Usar módulos
+    "ecmaFeatures": {
+      "jsx": true // Permitir el uso de JSX
+    }
+  },
+  "rules": {
+    // Puedes agregar reglas personalizadas aquí
+    "react/react-in-jsx-scope": "off", // Desactivar si usas React 17 o superior (con JSX automático)
+    "@typescript-eslint/no-unused-vars": "warn", // Avisar sobre variables no utilizadas
+    "no-console": "warn" // Avisar sobre el uso de console.log
+  }
 }
