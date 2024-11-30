@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@/components/ui/theme-provider";
+// import { ThemeProvider } from "@/components/ui/theme-provider";
 import { ToastProvider } from "@/components/ui/use-toast";
 import "./globals.css";
 
@@ -26,16 +26,16 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className="antialiased">
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        >
+        > */}
           <ToastProvider>
             <main>{children}</main>
           </ToastProvider>
-        </ThemeProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );
