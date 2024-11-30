@@ -6,7 +6,7 @@ export const metadata = {
   title: "Hexágono",
   description: "Creado por Hexágono",
   icons: {
-    icon: "/icon.png", // Icono de la página
+    icon: "/icon.png",
   },
   openGraph: {
     title: "Hexágono",
